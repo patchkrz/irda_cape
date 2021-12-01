@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8299 5843
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 6124F81C
+P 1450 2525
+F 0 "J1" H 1925 2525 50  0000 C CNN
+F 1 "Conn_01x08" H 1750 2450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1450 2525 50  0001 C CNN
+F 3 "~" H 1450 2525 50  0001 C CNN
+	1    1450 2525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 612512A8
+P 3175 2525
+F 0 "J2" H 3255 2517 50  0000 L CNN
+F 1 "Conn_01x08" H 3255 2426 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3175 2525 50  0001 C CNN
+F 3 "~" H 3175 2525 50  0001 C CNN
+	1    3175 2525
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1650 2225
+NoConn ~ 1650 2425
+NoConn ~ 1650 2525
+NoConn ~ 1650 2625
+NoConn ~ 1650 2725
+Text Label 1700 2825 0    50   ~ 0
+3.3V
+Text Label 1700 2925 0    50   ~ 0
+GND
+Text Label 1700 2325 0    50   ~ 0
+RST
+Wire Wire Line
+	1650 2325 1700 2325
+Wire Wire Line
+	1650 2825 1700 2825
+Wire Wire Line
+	1650 2925 1700 2925
+NoConn ~ 2975 2225
+NoConn ~ 2975 2325
+Text Label 2900 2425 2    50   ~ 0
+TX
+Text Label 2900 2525 2    50   ~ 0
+RX
+NoConn ~ 2975 2625
+NoConn ~ 2975 2725
+Text Label 2900 2825 2    50   ~ 0
+5V
+Text Label 2900 2925 2    50   ~ 0
+GND
+Wire Wire Line
+	2900 2425 2975 2425
+Wire Wire Line
+	2900 2525 2975 2525
+Wire Wire Line
+	2900 2825 2975 2825
+Wire Wire Line
+	2900 2925 2975 2925
+$Comp
+L Device:R R3
+U 1 1 61254214
+P 2350 3575
+F 0 "R3" V 2175 3575 50  0000 C CNN
+F 1 "0R" V 2250 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2280 3575 50  0001 C CNN
+F 3 "~" H 2350 3575 50  0001 C CNN
+	1    2350 3575
+	0    1    1    0   
+$EndComp
+Text Label 2575 3575 0    50   ~ 0
+RST
+Text Label 2100 3575 2    50   ~ 0
+5V
+Text Label 2100 3875 2    50   ~ 0
+3.3V
+Text Label 2575 3875 0    50   ~ 0
+RST
+$Comp
+L Device:R R4
+U 1 1 61254D6D
+P 2350 3875
+F 0 "R4" V 2200 3875 50  0000 C CNN
+F 1 "0R" V 2275 3875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2280 3875 50  0001 C CNN
+F 3 "~" H 2350 3875 50  0001 C CNN
+	1    2350 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 3575 2200 3575
+Wire Wire Line
+	2500 3575 2575 3575
+Wire Wire Line
+	2500 3875 2575 3875
+Wire Wire Line
+	2200 3875 2100 3875
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61256F32
+P 5050 2500
+F 0 "H1" H 5150 2546 50  0000 L CNN
+F 1 "MountingHole" H 5150 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5050 2500 50  0001 C CNN
+F 3 "~" H 5050 2500 50  0001 C CNN
+	1    5050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 612579E9
+P 5050 2875
+F 0 "H2" H 5150 2921 50  0000 L CNN
+F 1 "MountingHole" H 5150 2830 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 5050 2875 50  0001 C CNN
+F 3 "~" H 5050 2875 50  0001 C CNN
+	1    5050 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 61259961
+P 1450 1425
+F 0 "J3" H 1368 1742 50  0000 C CNN
+F 1 "Conn_01x04" H 1368 1651 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1450 1425 50  0001 C CNN
+F 3 "~" H 1450 1425 50  0001 C CNN
+	1    1450 1425
+	-1   0    0    -1  
+$EndComp
+Text Label 1750 1325 0    50   ~ 0
+VIN
+Text Label 1750 1425 0    50   ~ 0
+GND
+Text Label 1750 1625 0    50   ~ 0
+TX
+Text Label 1750 1525 0    50   ~ 0
+RX
+Wire Wire Line
+	1650 1325 1750 1325
+Wire Wire Line
+	1650 1425 1750 1425
+Wire Wire Line
+	1650 1525 1750 1525
+Wire Wire Line
+	1650 1625 1750 1625
+$Comp
+L Device:R R1
+U 1 1 6125C6F5
+P 2625 1300
+F 0 "R1" V 2475 1300 50  0000 C CNN
+F 1 "0R" V 2550 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2555 1300 50  0001 C CNN
+F 3 "~" H 2625 1300 50  0001 C CNN
+	1    2625 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6125D100
+P 2625 1550
+F 0 "R2" V 2475 1550 50  0000 C CNN
+F 1 "0R" V 2550 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2555 1550 50  0001 C CNN
+F 3 "~" H 2625 1550 50  0001 C CNN
+	1    2625 1550
+	0    1    1    0   
+$EndComp
+Text Label 2400 1300 2    50   ~ 0
+VIN
+Text Label 2400 1550 2    50   ~ 0
+VIN
+Text Label 2850 1300 0    50   ~ 0
+3.3V
+Text Label 2850 1550 0    50   ~ 0
+5V
+Wire Wire Line
+	2775 1300 2850 1300
+Wire Wire Line
+	2775 1550 2850 1550
+Wire Wire Line
+	2475 1550 2400 1550
+Wire Wire Line
+	2400 1300 2475 1300
+$EndSCHEMATC
